@@ -1,0 +1,28 @@
+// DEFINING THE GRID
+
+.flex-container
+    margin-right: auto
+    margin-left: auto
+    +screen('desktop')
+        width: 83.456%
+    +screen('tablet')
+        width: 93.75%
+    +screen('mobile')
+        width: 92%
+
+.flex-row
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 15px
+
+.flex-item
+    flex-basis: 0
+    flex-grow: 1
+
+.flex-end
+    display: flex
+    justify-content: flex-end
+
+.flex-center
+    display: flex
+    justify-content: center
