@@ -51,17 +51,24 @@ html {
     html {
       font-size: 48%; } }
 
+body {
+  overflow-x: hidden; }
+
 h1 {
   font-size: 4.8rem;
   font-weight: 600;
   text-transform: uppercase; }
+
+img {
+  width: 100%;
+  height: auto; }
 
 .flex-container {
   margin-right: auto;
   margin-left: auto; }
   @media only screen and (min-width: 1024px) {
     .flex-container {
-      width: 83.456%; } }
+      width: 59.375%; } }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .flex-container {
       width: 93.75%; } }
@@ -92,23 +99,25 @@ h1 {
   position: relative;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5);
-  background-size: cover; }
+  background-size: cover;
+  background-position-y: center;
+  background-image: url("/img/banner-bg.jpg"); }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .header {
-      height: 57.325vh; } }
+      height: 30vh; } }
   @media only screen and (max-width: 767px) {
     .header {
-      height: 87.999vh; } }
+      height: 30vh; } }
 
 .header-bar {
-  margin-top: 45px; }
+  margin-top: 9vh; }
 
 .header h1 {
   color: #fff;
   font-family: "Lato", sans-serif; }
 
 .logo {
-  width: 166px; }
+  width: 30%; }
 
 .banner-video {
   position: absolute;
@@ -123,5 +132,64 @@ h1 {
     .banner-video {
       width: auto;
       height: 88.298vh; } }
+
+.img-gallery {
+  margin-bottom: 15px; }
+
+.main-img {
+  padding: 15px; }
+
+.imgs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  width: 99%;
+  margin: 0 15px; }
+  @media only screen and (min-width: 1024px) {
+    .imgs {
+      height: auto; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .imgs {
+      max-height: 97px; } }
+
+.imgs img {
+  max-width: 23.532%;
+  max-height: 9.5em;
+  padding: 0 10px;
+  cursor: pointer; }
+
+.imgs img:nth-child(1) {
+  padding-left: 0; }
+
+.imgs img:nth-last-child(1) {
+  padding-right: 0; }
+
+/* width */
+.imgs::-webkit-scrollbar {
+  height: 8px; }
+
+/* Track */
+.imgs::-webkit-scrollbar-track {
+  background: transparent; }
+
+/* Handle */
+.imgs::-webkit-scrollbar-thumb {
+  background: #ccc;
+  opacity: 0.5; }
+
+/* Handle on hover */
+.imgs::-webkit-scrollbar-thumb:hover {
+  background: #555; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; } }
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in 1 forwards; }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,23 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sass Template</title>
+    <title>Image Gallery</title>
+    <link rel="icon" type="image/png" href="./img/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext"
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
         crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script>
 </head>
 
 <body>
+    <!-- Header Section -->
     <header class="header">
         <div class="header-bar">
             <div class="flex-container">
                 <div class="flex-row">
                     <!-- Site Logo -->
                     <div class="flex-item">
-                        <a href="/">
-                            <img class="logo" src="/img/logo.svg" alt="Outfit Of The Day logo">
+                        <a class="flex-center" href="http://andrewduarte.com.au/">
+                            <img class="logo" src="./img/logo.svg" alt="Outfit Of The Day logo">
                         </a>
                     </div>
 
@@ -36,6 +39,23 @@
             </div>
         </div>
     </header>
+    <div class="flex-container img-gallery">
+        <!-- Main Image -->
+        <div class="main-img">
+            <img src="./img/img-1.jpg" alt="" id="current">
+        </div>
+        <!-- Images -->
+        <div class="imgs">
+            <img src="./img/img-1.jpg" alt="">
+            <img src="./img/img-2.png" alt="">
+            <img src="./img/img-3.jpg" alt="">
+            <img src="./img/img-4.png" alt="">
+            <img src="./img/img-5.jpg" alt="">
+            <img src="./img/img-6.jpg" alt="">
+            <img src="./img/img-7.jpg" alt="">
+            <img src="./img/img-8.jpg" alt="">
+        </div>
+    </div>
 </body>
 
 </html>
