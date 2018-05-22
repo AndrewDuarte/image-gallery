@@ -101,7 +101,7 @@ img {
   background-color: rgba(0, 0, 0, 0.5);
   background-size: cover;
   background-position-y: center;
-  background-image: url("/img/banner-bg.jpg"); }
+  background-image: url("../img/banner-bg.jpg"); }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .header {
       height: 30vh; } }
